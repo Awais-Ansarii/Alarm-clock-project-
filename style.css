@@ -1,0 +1,148 @@
+/* resetting default padding and margin to every element */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: gray; */
+}
+
+/* styling heading section */
+.nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* align-content: center; */
+    height: 75vh;
+    width: 50vw;
+    /* margin-top: 10rem; */
+    background: black;
+    margin: 2rem 24rem;
+}
+
+#realtime-clock{
+    background: white;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    height: 10vh;
+    width: 25vw;
+    border-radius: 5px;
+}
+
+#realtime-clock span{
+    font-size: 3rem ;
+    font-family: monospace;
+    /* padding: 5px; */
+    /* padding-top: -20px; */
+    /* margin-top: 50px; */
+    background-color: white;
+}
+
+
+/* alarm input styling */
+
+
+#alarm-input-container{
+    width: 90%;
+    margin: 8px;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    
+}
+
+.alarm-input-group{
+    height: 32px;
+    padding: 4px;
+    border-radius: 0;
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.alarm-input-group:focus,
+.alarm-input-group:active{
+    border: 1px solid orange;
+    border-radius: none;
+    outline: none;
+}
+
+#alarm-title-input-box{
+    width: 90%;
+    min-width: 100px;
+    max-width: 450px;
+}
+
+#alarm-time-input-box{
+    width: 80%;
+    min-width: 100px;
+    max-width: 400px;
+    letter-spacing: 2px;
+}
+
+#alarm-submit-btn{
+   /* margin-left: -6px; */
+   background: orange;
+   border-radius: 4px;
+    cursor: pointer;
+    width: 15rem;
+    font-size: larger;
+    font-weight: bold;
+    
+}
+
+
+
+
+
+/* alarm list styling */
+
+
+#alarm-list{
+    width: 80%;
+    margin: auto;
+    margin-top: 32px;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+#alarm-list li {
+    display: flex;
+    background: white;
+    margin: 2px;
+    padding-left: 20px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.list-time{
+    flex-grow: 2;
+    min-width: 120px;
+    letter-spacing: 2px;
+}
+
+.list-title{
+    flex-grow: 4;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+.list-img{
+    background: red;
+    cursor: pointer;
+}
+
+.clock-img{
+    height: 5rem;
+    width: 7rem;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <script src="https://kit.fontawesome.com/7ec173c053.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+
+    <div class="nav">
+        <img src="assets/clock.svg" alt="alram-clock" class="clock-img">
+        <h1>  Alarm Clock Project </h1>
+    </div>
+    <div class="background">
+    <!-- RealTime Clock -->
+    <div id="realtime-clock">
+        <span>12:01:22 AM</span>
+    </div>
+
+    <!-- Alarm Creation -->
+    <div id="alarm-input-container">
+        <input type="text" id="alarm-title-input-box" class="alarm-input-group" placeholder="Enter title here ....">
+        <input type="text" id="alarm-time-input-box" class="alarm-input-group" placeholder="hh:mm:ss am/pm" >
+        <button id="alarm-submit-btn" class="alarm-input-group" >Set Alarm</button>
+    </div>
+
+    <!-- list of alarms -->
+    <ol id="alarm-list"> 
+        <!-- <li>
+            <span class="list-time">00:00:00 AM</span>
+            <span class="list-title">GOTO Sleep</span>
+            <img src="res/trash.svg" alt="delete" class="list-img" data-id="">
+        </li>  -->
+    </ol>
+
+    </div>
+
+
+
+    <script src="./script.js"></script>
+    
+
+</body>
+</html>
